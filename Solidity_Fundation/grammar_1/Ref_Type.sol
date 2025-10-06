@@ -1,10 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.14;
 
+/*
+1.变量存储位置
+2.作用域(全局变量/局部变量/状态变量)
+3.时间和以太单位
+4.引用类型（数组/结构体）
+
+*/
 
 contract Reference {
 
-// storage(状态变量)/memory(参与与临时变量)/calldata(不可修改) -前者在链上，后两者相当于在内存里。 
+// storage(状态变量)/memory(参与与临时变量)/calldata(不可修改) -前者在链上，后两者相当于在内存里。 --只能在函数内使用
 
 uint[] public x = [1,2,3];
 
@@ -54,5 +61,54 @@ return (1 ether == 1e18 wei,1 gwei == 1e9 wei,1 seconds == 1);
 
 
 }
+
+//数组-定长字节数组如bytes1 bytes32等为值类型，定长数组int[x],address[x]等及可变长数组(动态数组)int[],address[]，特殊的为bytes为引用类型，
+//bytes不能写为bytes[],且其比bytes1[]更省gas.
+
+//固定长度数组
+uint[8] public  array1 = [uint(1),2,3,4,5,6,7,8];   //[uint(1),2,3,4,5,6,7,8]的中值类型按第一个的值类型，否则为uint8
+uint[] public  array4;
+
+function Array() public  returns (uint,uint,uint){
+
+//memory声明的动态数组用new创建，且必须声明长度。
+uint[] memory array3 = new uint[](3);   //方法内的引用类型都要声明存储域
+
+array4 = array1; 
+
+array3[0] = 10;
+array4.push(20);
+array4.push();
+array4.pop();  //无返回值
+
+uint num = array4.length;
+
+return (array3[0],num,array4[num - 1]);
+
+
+}
+
+//结构体及赋值的四种方式
+//声明
+struct Student {
+ uint id;
+ uint age;
+}
+
+Student student;
+
+//赋值
+function giveValue() external {
+//1. student.id = 10; student.age = 20;
+//2. Student storage _student = student; // 创建一个引用,再按1赋值
+//3. student = Student(10,20);
+//4. student = Student({id:10,age:20});
+
+}
+
+
+
+
+
 
 }

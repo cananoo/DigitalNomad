@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "b",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "c",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "不可改-constant(可用于任意变量)且需声明时即赋值-immutable(只可数值类型-uint/address)可在构造函数时赋值",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity_Fundation/grammar_1/constantAndImmutable.sol": "CI"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity_Fundation/grammar_1/constantAndImmutable.sol": {
+			"keccak256": "0x08125f6a2ccbfdf81ef92a327cfeeea611fb1374b895943ade69e432e31fb9d0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ac20d36ff9cc49f63fabda5bb01f1952867b106678f5296c591a68c066701fee",
+				"dweb:/ipfs/QmNvrhaF4XasqKC3HWes88VtNZZEfCGgpZmjxCFg5oSHJc"
+			]
+		}
+	},
+	"version": 1
+}

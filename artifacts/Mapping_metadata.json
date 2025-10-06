@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "changeValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "idToAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "映射-mapping",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity_Fundation/grammar_1/mapping.sol": "Mapping"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity_Fundation/grammar_1/mapping.sol": {
+			"keccak256": "0x7a54c2f518932edcc4fcea7ae4a3dccb31580656ba392170bd62d84e19f6df3d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e4fe31bb0d4d4a3ead9785ae1a1f86b5e7eda0a5bb082519a8b9b5ca1fbf8c6c",
+				"dweb:/ipfs/QmVFRopiFXdcjANjBCNtZg8oHKwn6QYLrPFoTd76rujMiN"
+			]
+		}
+	},
+	"version": 1
+}

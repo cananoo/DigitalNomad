@@ -85,6 +85,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "deleteVar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "e",
 				"outputs": [
 					{
@@ -136,7 +143,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity_Fundation/day_1/Var_Type.sol": "Var_type"
+			"Solidity_Fundation/grammar_1/Var_Type.sol": "Var_type"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -150,12 +157,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity_Fundation/day_1/Var_Type.sol": {
-			"keccak256": "0xc9d116f3ad6f6c24380d9f66af9cb23f93bdb29896eeb4ff936ec0b64831eb60",
+		"Solidity_Fundation/grammar_1/Var_Type.sol": {
+			"keccak256": "0xe4e4c9bf863b57cb64c06296840fa3adcb07601f67c145e9515d9ccfe38d8990",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f2eeca0d061581709f52e8f9614065f079ceb2f090136234f5439750f7c4355",
-				"dweb:/ipfs/QmSRTKbqmyULBU7Ne7vBqnfGjT8bTVyV3bEa8w1Ky3yhpi"
+				"bzz-raw://3e68d1e25a826554b280934c4394d6f87d8e61dbab8de052fec90eecef8ea1a5",
+				"dweb:/ipfs/QmQxRCbzFnvr18Rz7GMDp5jMCZcqBHKwgjCDaezmrU3Jhm"
 			]
 		}
 	},

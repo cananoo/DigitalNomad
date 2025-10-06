@@ -28,6 +28,9 @@ enum Example {apple,android,windows} // 用unit 0,1,2表示为apple,android,wind
 Example example = Example.apple;
 uint public num = uint(example); //枚举可以显式地和uint相互转换
 
-
+// delete 关键字 - 让变量变成默认值，但必须在函数内
+function deleteVar() external {
+    delete b;
+}
 
 }
